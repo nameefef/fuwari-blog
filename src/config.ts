@@ -77,7 +77,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		{
 			name: "关于",
-			url: "https://space.bilibili.com/60634853", // Internal links should not include the base path, as it is automatically added
+			url: "https://space.bilibili.com/606348531", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
