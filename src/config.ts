@@ -18,7 +18,7 @@ export const noticeConfig: NoticeConfig = {
 };
 
 export const siteConfig: SiteConfig = {
-	title: "我的技术站",
+	title: "EasonYin",
 	subtitle: "记录学习与成长",
 	description:
 		"一个分享技术与学习的个人博客",
@@ -77,32 +77,37 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		{
 			name: "关于",
-			url: "/about/", // Internal links should not include the base path, as it is automatically added
-			external: false, // Show an external link icon and will open in a new tab
+			url: "https://space.bilibili.com/60634853", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
+		},
+		{
+			name: "论坛",
+			url: "https://my-chat-app.pages.dev", // Internal links should not include the base path, as it is automatically added
+			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
 	avatar: "https://xxx.com/avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Eason",
-	bio: "热爱技术与开源",
+	name: "EasonYin",
+	bio: "",
 	links: [
 		{
 			name: "GitHub",
 			icon: "github", // Local icon
-			url: "https://github.com/yourname",
+			url: "https://github.com/nameefef",
 		},
 		{
-			name: "Email",
-			icon: "envelope", // Local icon
-			url: "mailto:you@example.com",
+			name: "B站",
+			icon: "bilibili", // Local icon
+			url: "https://space.bilibili.com/60634853",
 		},
 	],
 };
 
 export const licenseConfig: LicenseConfig = {
-	enable: true,
+	enable: false,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
