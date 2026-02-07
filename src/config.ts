@@ -81,15 +81,15 @@ export const navBarConfig: NavBarConfig = {
 			external: true, // Show an external link icon and will open in a new tab
 		},
 		{
-			name: "论坛",
-			url: "https://my-chat-app.pages.dev", // Internal links should not include the base path, as it is automatically added
+			name: "聊天",
+			url: "https://t.me/+EasonYin", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://xxx.com/avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "https://avatars.githubusercontent.com/u/148100?v=4", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "EasonYin",
 	bio: "",
 	links: [
