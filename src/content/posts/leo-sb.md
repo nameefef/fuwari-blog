@@ -1,7 +1,7 @@
 ---
 title: Leo 傻逼
 published: 2026-02-07T20:55:00
-description:
+description: Leo 是个大傻逼
 image: ''
 
 tags: [随笔]
