@@ -12,34 +12,34 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const noticeConfig: NoticeConfig = {
-	enable: true,
+	enable: false,
 	level: "happy",
-	content: "由于博客被长期 DDOS 攻击，我们决定将博客所有域名，包括但不限于： acofork.com, 2b2x.cn, 0d.hk, 2x.nz 等，全部改为使用Cloudflare CDN提供服务。若有Bug请及时反馈，感谢各位一路以来的理解与支持。",
+	content: "欢迎来到我的技术站！",
 };
 
 export const siteConfig: SiteConfig = {
-	title: "AcoFork Blog",
-	subtitle: "技术分享与实践",
+	title: "我的技术站",
+	subtitle: "记录学习与成长",
 	description:
-		"分享网络技术、服务器部署、内网穿透、静态网站搭建、CDN优化、容器化部署等技术教程与实践经验的个人技术博客，专注于云原生、无服务器架构和前后端开发，作者为afoim/二叉树树",
+		"一个分享技术与学习的个人博客",
 
 	keywords: [],
 	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
 	themeColor: {
-		hue: 361, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
+		hue: 200, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: false, // Hide the theme color picker for visitors
 		forceDarkMode: false, // Force dark mode and hide theme switcher
 	},
 	banner: {
 		enable: false,
-		src: "/xinghui.avif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		src: "/banner.avif", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
-			enable: true, // Display the credit text of the banner image
-			text: "Pixiv @chokei", // Credit text to be displayed
+			enable: false, // Display the credit text of the banner image
+			text: "", // Credit text to be displayed
 
-			url: "https://www.pixiv.net/artworks/122782209", // (Optional) URL link to the original artwork or artist's page
+			url: "", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	background: {
@@ -64,13 +64,10 @@ export const siteConfig: SiteConfig = {
 		},
 	],
 	officialSites: [
-		{ url: "https://acofork.com", alias: "CN" },
-		{ url: "https://2x.nz", alias: "Global" },
+		{ url: "https://yourname.com", alias: "Blog" },
 	],
 	server: [
 		{ url: "", text: "Blog" },
-		{ url: "https://u.2x.nz", text: "Umami" },
-		{ url: "https://p.2x.nz", text: "RandomPic" },
 	],
 };
 
@@ -79,52 +76,27 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		{
-			name: "友链",
-			url: "/friends/", // Internal links should not include the base path, as it is automatically added
+			name: "关于",
+			url: "/about/", // Internal links should not include the base path, as it is automatically added
 			external: false, // Show an external link icon and will open in a new tab
-		},
-		{
-			name: "赞助",
-			url: "/sponsors/", // Internal links should not include the base path, as it is automatically added
-			external: false, // Show an external link icon and will open in a new tab
-		},
-		{
-			name: "统计",
-			url: "https://u.2x.nz/share/CdkXbGgZr6ECKOyK", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-		{
-			name: "论坛",
-			url: "https://i.2x.nz", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "二叉树树",
-	bio: "Protect What You Love.",
+	avatar: "https://xxx.com/avatar.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	name: "Eason",
+	bio: "热爱技术与开源",
 	links: [
-		{
-			name: "QQ",
-			icon: "qq", // Local icon
-			url: "https://qm.qq.com/q/FWqOHlwL2m",
-		},
-		{
-			name: "Telegram",
-			icon: "telegram", // Local icon
-			url: "https://t.me/+_07DERp7k1ljYTc1",
-		},
-		{
-			name: "Bilibli",
-			icon: "bilibili", // Local icon
-			url: "https://space.bilibili.com/325903362",
-		},
 		{
 			name: "GitHub",
 			icon: "github", // Local icon
-			url: "https://github.com/afoim",
+			url: "https://github.com/yourname",
+		},
+		{
+			name: "Email",
+			icon: "envelope", // Local icon
+			url: "mailto:you@example.com",
 		},
 	],
 };
@@ -153,8 +125,8 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const gitHubEditConfig: GitHubEditConfig = {
-	enable: true,
-	baseUrl: "https://github.com/afoim/fuwari/blob/main/src/content/posts",
+	enable: false,
+	baseUrl: "https://github.com/yourname/fuwari-blog/blob/main/src/content/posts",
 };
 
 // todoConfig removed from here
