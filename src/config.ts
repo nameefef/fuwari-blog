@@ -82,8 +82,8 @@ export const navBarConfig: NavBarConfig = {
 		},
 		{
 			name: "聊天",
-			url: "https://discord.gg/你的邀请链接", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
+			url: "https://discord.gg/SWCw9AC6",
+			external: true,
 		},
 	],
 };
