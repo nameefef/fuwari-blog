@@ -34,7 +34,12 @@ export default defineConfig({
 	base: "/",
 	trailingSlash: "always",
 	output: "static",
-	redirects: {},
+	redirects: {
+		"/posts/pin/": {
+			href: "https://discord.gg/SWCw9AC6",
+			status: 302,
+		},
+	},
 	integrations: [
 		tailwind({
 			nesting: true,
